@@ -94,40 +94,64 @@
 </section>
 
 
-    <!-- Projects Section -->
-    <section id="projects" class="max-w-7xl mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-center">Projects</h2>
-        <!-- Filter Buttons -->
-        <div class="flex justify-center space-x-4 mt-4">
-            <button class="filter-button bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProjects('all')">All</button>
-            <button class="filter-button bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProjects('js')">JavaScript</button>
-            <button class="filter-button bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProjects('bug')">Bug Bounty</button>
+<!-- Projects Section -->
+<section id="projects" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-3xl font-bold text-center">Projects</h2>
+    
+    <!-- Filter Buttons -->
+    <div class="flex justify-center space-x-4 mt-4">
+        <button class="filter-button bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProjects('all')">All</button>
+        <button class="filter-button bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProjects('js')">JavaScript</button>
+        <button class="filter-button bg-blue-500 text-white px-4 py-2 rounded" onclick="filterProjects('bug')">Bug Bounty</button>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-list">
+        
+        <!-- JavaScript Project Example -->
+        <div class="project-item js bg-white p-6 rounded-lg shadow">
+            <!-- Picture Holder -->
+            <div class="w-full h-48 bg-gray-200 rounded-md flex items-center justify-center overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="Portfolio Website" class="object-cover w-full h-full">
+            </div>
+            
+            <!-- Project Info -->
+            <h3 class="font-semibold mt-4">Portfolio Website</h3>
+            <p class="mt-2">Technologies: React, Node.js, MongoDB</p>
+            <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Project</a>
         </div>
 
-        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-list">
-            <div class="project-item js bg-white p-6 rounded-lg shadow">
-                <h3 class="font-semibold">Portfolio Website</h3>
-                <p class="mt-2">Technologies: React, Node.js, MongoDB</p>
-                <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Project</a>
+        <!-- E-commerce Project -->
+        <div class="project-item js bg-white p-6 rounded-lg shadow">
+            <div class="w-full h-48 bg-gray-200 rounded-md flex items-center justify-center overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="E-commerce Store" class="object-cover w-full h-full">
             </div>
-            <div class="project-item js bg-white p-6 rounded-lg shadow">
-                <h3 class="font-semibold">E-commerce Store</h3>
-                <p class="mt-2">Technologies: HTML, CSS, JavaScript</p>
-                <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Project</a>
-            </div>
-            <div class="project-item bug bg-white p-6 rounded-lg shadow">
-                <h3 class="font-semibold">Vulnerability Report</h3>
-                <p class="mt-2">Found XSS vulnerability in web app</p>
-                <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Report</a>
-            </div>
-            <div class="project-item bug bg-white p-6 rounded-lg shadow">
-                <h3 class="font-semibold">SQL Injection Discovery</h3>
-                <p class="mt-2">Reported critical SQL injection</p>
-                <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Report</a>
-            </div>
-            <!-- Add more projects here -->
+            <h3 class="font-semibold mt-4">E-commerce Store</h3>
+            <p class="mt-2">Technologies: HTML, CSS, JavaScript</p>
+            <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Project</a>
         </div>
-    </section>
+
+        <!-- Bug Bounty Project Example -->
+        <div class="project-item bug bg-white p-6 rounded-lg shadow">
+            <div class="w-full h-48 bg-gray-200 rounded-md flex items-center justify-center overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="Vulnerability Report" class="object-cover w-full h-full">
+            </div>
+            <h3 class="font-semibold mt-4">Vulnerability Report</h3>
+            <p class="mt-2">Found XSS vulnerability in web app</p>
+            <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Report</a>
+        </div>
+
+        <!-- SQL Injection Project -->
+        <div class="project-item bug bg-white p-6 rounded-lg shadow">
+            <div class="w-full h-48 bg-gray-200 rounded-md flex items-center justify-center overflow-hidden">
+                <img src="https://via.placeholder.com/300" alt="SQL Injection Discovery" class="object-cover w-full h-full">
+            </div>
+            <h3 class="font-semibold mt-4">SQL Injection Discovery</h3>
+            <p class="mt-2">Reported critical SQL injection</p>
+            <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Report</a>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="bg-gray-100 py-16">
