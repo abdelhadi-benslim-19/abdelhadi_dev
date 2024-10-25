@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdelhadi's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold"><a href="#home">Abdelhadi_Dev</a></h1>
+            <div class="flex items-center">
+                <button id="menu-button" class="md:hidden p-2 rounded-md text-gray-800 focus:outline-none focus:ring">
+                    <span class="material-icons"><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <ul id="menu" class="hidden md:flex space-x-4">
+                    <li><a href="#about" class="hover:text-blue-500">About Me</a></li>
+                    <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="dropdown" class="md:hidden hidden bg-white shadow">
+        <ul class="flex flex-col items-center space-y-2 px-4 py-2">
+            <li><a href="#about" class="hover:text-blue-500">About Me</a></li>
+            <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
+            <li><a href="#projects" class="hover:text-blue-500">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="home" class="bg-blue-500 text-white text-center py-20">
+        <h2 class="text-4xl font-bold">Building Secure Websites & Web Apps</h2>
+        <p class="mt-4 text-lg">Full Stack JavaScript Developer</p>
+        <a href="#projects" class="mt-6 inline-block bg-white text-blue-500 px-4 py-2 rounded-full">See My Work</a>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center">About Me</h2>
+        <p class="mt-4 text-center">I'm a passionate Full Stack JavaScript Developer focused on building secure and efficient web applications. My mission is to ensure that the web is a safe place for everyone.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center">Skills</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">HTML5</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">CSS3</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">JavaScript (ES6+)</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">Node.js</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">Express.js</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">React</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">MongoDB</h3>
+                </li>
+                <li class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-semibold">MySQL</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-16">
+        <h2 class="text-3xl font-bold text-center">Projects</h2>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="font-semibold">Portfolio Website</h3>
+                <p class="mt-2">Technologies: React, Node.js, MongoDB</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Project</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="font-semibold">E-commerce Store</h3>
+                <p class="mt-2">Technologies: HTML, CSS, JavaScript</p>
+                <a href="#" class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-full">View Project</a>
+            </div>
+            <!-- Add more projects here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center">Contact Me</h2>
+            <form action="https://formspree.io/f/mqakawlz" method="post" class="mt-8 max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block font-semibold">Name:</label>
+                    <input type="text" id="name" name="name" required class="border p-2 w-full rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block font-semibold">Email:</label>
+                    <input type="email" id="email" name="email" required class="border p-2 w-full rounded">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block font-semibold">Message:</label>
+                    <textarea id="message" name="message" required class="border p-2 w-full rounded" rows="4"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-full">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <p>&copy; 2024 Abdelhadi_Dev. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
